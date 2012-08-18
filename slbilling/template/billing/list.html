@@ -1,0 +1,30 @@
+% extends 'base.html' %}
+
+{% block title %}
+{% if previous %}
+Archive {{ previous }}
+{% else %}
+Zing Blog
+{% endif %}
+{% endblock %}
+
+
+{% block content %}
+{% for post in posts %}
+<a href="/{{ post.published.year }}/{{ post.published.month }}/{{ post.slug }}/" title="{{ post.title }}">
+{{ post.title }}
+</a>
+
+{{ post.description|safe }}
+<hr>
+{% endfor %}
+
+{% if previous %} <a href="/archive/{{ previous }}/">&laquo; Previous</a>
+{% endif %}
+{% if next and previous %}
+&nbsp;|&nbsp;
+{% endif %}
+{% if next %}
+<a href="/archive/{{ next }}/">Next</a>
+{% endif %}
+{% endblock content %}

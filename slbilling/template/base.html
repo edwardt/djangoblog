@@ -1,0 +1,59 @@
+<doctype html>
+
+<html>
+
+<meta charset="UTF-8">
+
+<title>{% block title %}Silverling Billing{% endblock %}</title>
+
+<link rel="alternate" type="application/rss+xml" title="rss for zing" href="#### We'll come back to this ####"≷
+<link rel="stylesheet" type="text/css" href="/media/css/style.css">
+<link rel="icon" type="image/gif" href="/media/zing.ico">
+<meta name="description" content="My wonderful blog">
+<meta name="robots" content="all">
+
+<style type="text/css">
+
+/* Page */
+body{padding:0;margin:0;font-family:Arial, Helvetica, Tahoma, sans-serif;}
+/* Title section */
+#title{float:left;width:100%;padding:0;margin:0;border:0;border-bottom:1px solid #cccccc;}
+#title h1{padding:10px 0 0 50px;font-size:60pt;margin:0;font-family:"Myriad Pro", Arial, Helvetica, Tahoma, sans-serif;}
+#title h2{margin:0;padding:0;text-align:center;}
+/* Content section */
+#content{float:left;border:0;margin:0;padding:10px 2% 0 2%;width:75%;}
+/* Sidebar section */
+#sidebar{float:left;border:0;border-left:1px solid #cccccc;padding;10px 2% 0 2%;width:20%;margin:0;}
+/* Footer section */
+#footer{float:left;border:0;border-top:1px solid #cccccc;padding:0;margin:0;width:100%;text-align:center;}
+
+</style>
+
+
+</head>
+<body>
+
+
+<!-- Start title -->
+<div id="title">
+
+<h1>Zing Blog</h1>
+<h2>{% block under_title %}The blog{% endblock %}</h2> 
+<!-- End title -->
+</div>
+
+
+<!-- Start content -->
+<div id="content">
+
+{% block content %} {% endblock %}
+<!-- End content -->
+</div>
+
+
+<!-- Start sidebar -->
+<div id="sidebar">
+
+
+<!-- End sidebar -->
+</div>
